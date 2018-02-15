@@ -15,6 +15,12 @@ Unless otherwise specified, these blueprints have been created for use with Cent
 - Set the 'Credential' setting on each blueprint service/VM
 - Ensure runtime variables are populated when running blueprints
 
+## Note re credentials
+
+Some of the downloadable blueprints use SSH public/private key authentication instead of username/password authentication.  Please ensure you have configured your public/private keys before deploying SSH-authenticated blueprints.
+
+A quick guide for generating SSH keys is available here: https://portal.nutanix.com/#/page/docs/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v10:nuc-generating-private-key-t.html
+
 ## Support
 
 These blueprints are *unofficial* and are not supported or maintained by Nutanix in any way.
