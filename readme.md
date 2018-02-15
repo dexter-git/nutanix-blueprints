@@ -19,6 +19,6 @@ Unless otherwise specified, these blueprints have been created for use with Cent
 
 These blueprints are *unofficial* and are not supported or maintained by Nutanix in any way.
 
-Please also be advised that these blueprints may deploy applications that do not follow best practices.  Please check through each blueprint to ensure the configuration suits your requirements.
+In addition, please also be advised that these blueprints may deploy applications that do not follow best practices.  Please check through each blueprint to ensure the configuration suits your requirements.
 
-
+***Changes will be required before these application blueprints can be used in production environments.***
