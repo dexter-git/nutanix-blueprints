@@ -1,4 +1,4 @@
-# Nutanix Blueprints
+# Nutanix Calm Blueprints
 
 This repository contains a selection of sample blueprints for use with Nutanix Calm.
 
