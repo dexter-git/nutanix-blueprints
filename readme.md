@@ -2,11 +2,17 @@
 
 This repository contains a selection of sample blueprints for use with Nutanix Calm.
 
+## Compatibility
+
+Unless otherwise specified, these blueprints have been created for use with CentOS 7 Linux VMs.  There may be changes required before they can be used with other Linux distributions.
+
 ## Usage
 
 - Import blueprint from downloaded .json file
-- Set the 'Image' setting on each blueprint service/VM
 - Configure credentials for your environment
+- Set the 'Image' setting on each blueprint service/VM
+- Set the 'Network Adapters' setting on each blueprint service/VM
+- Set the 'Credential' setting on each blueprint service/VM
 - Ensure runtime variables are populated when running blueprints
 
 ## Support
