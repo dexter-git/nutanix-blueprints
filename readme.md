@@ -8,12 +8,7 @@ Unless otherwise specified, these blueprints have been created for use with Cent
 
 ## Usage
 
-- Import blueprint from downloaded .json file
-- Configure credentials for your environment
-- Set the 'Image' setting on each blueprint service/VM
-- Set the 'Network Adapters' setting on each blueprint service/VM
-- Set the 'Credential' setting on each blueprint service/VM
-- Ensure runtime variables are populated when running blueprints
+See the readme.md usage notes for each application.
 
 ## Note re credentials
 
