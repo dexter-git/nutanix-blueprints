@@ -1,0 +1,28 @@
+# Nutanix Calm & Ansible
+
+These Nutanix Calm blueprints will deploy a simple Ansible configuration management environment.
+
+## Components
+
+- 1x Ansible Controller
+- 1x VM that acts as an Ansible node (managed by the Ansible Controller)
+
+## Prerequisites
+
+To deploy these blueprints you will need the following things available.
+
+- A CentOS 7 Linux VM image, published via the Nutanix Image Service
+- Public and private key for your environment (see [Generating SSH Key](https://portal.nutanix.com/#/page/docs/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v10:nuc-generating-private-key-t.html) in the Nutanix documentation)
+
+## Usage
+
+- Import the blueprints into your Nutanix Calm environment
+- Adjust credentials to suit your requirements (the import will warn about blueprint validation errors, since credentials are not saved in exported blueprints)
+- Alter each Calm service/VM so that it deploys your CentOS 7 image
+- Alter each Calm service/VM so that it connects to your preferred network
+- Launch the Ansible controller blueprint
+- Fill in all required runtime variables
+- Launch the Ansible node blueprint
+- Fill in all required variables, especially the IP address for your Ansible controller
+- After deployment, run the custom action 'ApplyApacheConfiguration' on the Ansible controller
+- Browse to the Ansible node's IP address to see Apache has been installed and enabled
