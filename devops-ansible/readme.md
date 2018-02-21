@@ -26,3 +26,7 @@ To deploy these blueprints you will need the following things available.
 - Fill in all required variables, especially the IP address for your Ansible controller
 - After deployment, run the custom action 'ApplyApacheConfiguration' on the Ansible controller
 - Browse to the Ansible node's IP address to see Apache has been installed and enabled
+
+## Important Security Note
+
+*This blueprint disables the `host_key_checking` setting within `/etc/ansible/ansible.cfg`.  This is for ease-of-use during demos, only!  Don't do this in production!*  
