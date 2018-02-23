@@ -8,6 +8,7 @@ The intention of this blueprint is to allow customers testing of OpenLDAP, a com
 
 - 1x OpenLDAP server
 - 1x CentOS 7 Linux VM configured to authenticate against the new OpenLDAP directory
+- 1x web server hosting phpLDAPAdmin, a web-based GUI for OpenLDAP management
 
 *Note: ntnxdemo.local is hard-coded as the domain, for now*
 
@@ -27,8 +28,14 @@ To deploy this blueprint you will need the following things available.
 - Launch the blueprint
 - Fill in all required runtime variables, paying particular attention to the credentials section
 - After deployment, connect to the deployed Linux client and login with the credentials supplied during deployment
-- To use phpLDAPAdmin, browse to `http://<openldap_server_ip_address>/phpldapadmin (login using the OPENLDAP_PASSWORD entered during blueprint launch)
 - Configure Prism and/or Prism Central Authentication, as per the next section
+
+## phpLDAPAdmin
+
+- To use the GUI OpenLDAP admin app, browse to `http://<phpldapadmin_server_ip_address>/phpldapadmin`
+- Enter `cn=ldapadm,dc=ntnxdemo,dc=local` for the Login DN
+- Enter the OPENLDAP_PASSWORD that was provided during blueprint launch
+- Click `Authenticate`
 
 ## Nutanix Authentication
 
