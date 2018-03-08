@@ -6,6 +6,12 @@ This repository contains a selection of sample blueprints for use with Nutanix C
 
 Unless otherwise specified, these blueprints have been created for use with CentOS 7 Linux VMs.  There may be changes required before they can be used with other Linux distributions.
 
+## Prerequisites
+
+For all blueprints contained in this repository, an Internet connection is required from the Nutanix cluster.
+
+VMs in these blueprints make extensive use of package installation from public repositories, e.g. for CentOS 7.
+
 ## Usage
 
 See the readme.md usage notes for each application.
